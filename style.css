@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Herr+Von+Muellerhoff&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;500;700&family=Quicksand:wght@300;400;600&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@400;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+section{
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* --------- global flex --------------*/
+header,
+.logo,
+.nav,
+.contact
+{
+display: flex;
+align-items: center;
+}
+
+/*------------- header ----------------*/
+header{
+
+justify-content: space-between;
+padding: 0px 0px 0px 2%;
+background-color: #FCD21C;
+position: relative;
+height: 70px;
+}
+
+
+
+
+.logo img
+{
+    max-width: 110px;
+    height: 100%;
+   object-fit: cover;
+}
+.nav
+{
+    position: absolute;
+    right: 20%;
+
+}
+
+.nav a{
+    font-size: clamp(15px, 10px, 18px);
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.nav a:hover::after{
+    position: absolute;
+    content: "";
+    top:30px;
+    left:0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.nav a.active
+{
+    background-color: #fff;
+    border-radius: 50px;
+}
+.contact
+{
+    background-color: #fff;
+    height: 100%;
+    padding: 0px 20px;
+    gap: 0px 20px;
+    text-align: center;
+}
+.contact i:first-child
+{
+    font-size: 20px;
+}
+.contact> div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0px;
+
+}
+
+.contact> div span:first-child
+{
+    font-size: 15px;
+    font-weight: lighter;
+}
+.contact> div span:nth-child(2)
+{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.toggle-btn
+{
+    position: absolute;
+    right: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    display: none;
+
+    padding: 0px 10px;
+}
+
+/*------------ header ends --------------*/
+
+.top-image
+{
+    min-height: 10vh;
+    background-image: url("img/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding:5%;
+}
+.top-image .links a
+{
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.top-image .links a i
+{
+    margin: 0px 15px;
+    color: #FCD21C;
+}
+
+/*------------- Out Team section ----------*/
+
+.our-team
+{
+    padding: 5%;
+    text-align: center;
+}
+ .headline
+{
+    max-width:200px;
+    margin: 0 auto;
+
+}
+.headline h1
+{
+    background-color: #FCD21C;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.headline h4
+{
+    text-align: center;
+}
+.our-team .cards
+{
+  display: flex;
+  gap:20px 30px;
+  flex-wrap: wrap;
+   margin-top: 5rem;
+}
+.our-team .cards .card
+{
+    flex: 1 1 22rem;
+    text-align: center;
+}
+.our-team .cards .card .inner-card-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.our-team .cards .card img{
+ width: 200px;
+  height: 200px;
+border-radius: 50%;
+  object-fit: cover;
+}
+.our-team .cards .card .name
+{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.our-team .cards .card .status
+{
+    margin-bottom: 20px;
+}
+
+.our-team .cards .card .social-links
+{
+    display: flex;
+    gap: 0px 10px;
+}
+.our-team .cards .card .social-links a{
+    border: 2px solid #000;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+      color: #000;
+      opacity: .5;
+      transition: opacity .3s linear;
+}
+.our-team .cards .card .social-links a:hover
+{
+    opacity: 1;
+}
+.our-team .cards .card .social-links a i
+{
+
+
+    font-weight: bold;
+}
+.our-team .cards .card p
+{
+    margin-top: 20px;
+}
+
+/*------------- Our team ends --------------*/
+
+ /*---- our tutor starts --------------*/
+
+ .our-tutor
+ {
+     padding: 50px;
+     background-color: #FCD21C;
+ }
+
+  .our-tutor .headline
+  {
+      margin-bottom: 80px;
+  }
+   .our-tutor .headline h1{
+       padding: 10px;
+       background-color: #fff;
+   }
+
+
+     .our-tutor .card
+   {
+       padding: 10px 30px;
+       border-radius: 5px;
+       text-align: center;
+       background-color: #fff;
+       box-shadow:  1px 1px 20px 1px rgba(27, 27, 27, .2) !important;
+       max-width: 300px;
+       min-height:300px ;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+   }
+    .our-tutor .card:hover, .our-tutor .card:hover .info i
+    {
+       background-color: rgb(14, 13, 13);
+         color: #FCD21C;
+    }
+    .our-tutor .card:hover, .our-tutor .card:hover .info h3
+    {
+
+         color: #fff;
+    }
+
+.dots
+   {
+       position: absolute;
+       top:15px;
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       margin-bottom: 30px;
+   }
+   .dots .dot
+   {
+       width: 13px;
+       height: 13px;
+       border-radius: 50%;
+       background-color: #FCD21C;
+       box-shadow: 1px 1px 1px .3px rgba(22, 22, 22, .4);
+   }
+
+.info
+   {
+       display: flex;
+       flex-direction: column;
+       gap: 20px 0px;
+   }
+   .info .space
+   {
+       margin-bottom: 50px;
+
+   }
+
+   .info i
+   {
+       color: #000;
+       font-size: 30px;
+   }
+    .info .line
+    {
+        background-color: #FCD21C;
+        height: 2px;
+        width: 30px;
+        margin: 0 auto;
+    }
+
+ /*---- our tutor ends --------------*/
+
+/*--------------------- teaching experience section starts  ---------------*/
+
+.Experience .headline
+
+{
+    max-width: 500px;
+
+}
+.Experience .headline h1
+{
+    background-color: #fff;
+    padding: 0;
+    font-weight: bold;
+    font-size: 25px;
+}
+.Experience .headline h1 span
+{
+    color: #FCD21C;
+}
+.rating
+{
+    display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+/*--------------------- teaching experience section ends  ---------------*/
+
+.study-image
+{
+    background-image: url("img/7.jpg") ;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    width: 100%;
+}
+
+/*---------------- JD ----------*/
+
+.JD .headline
+{
+max-width: 800px;
+
+}
+
+.JD .headline h1
+{
+    display: inline-block;
+}
+
+.JD .card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.JD .info
+   {
+       display: flex;
+       flex-direction: column;
+       gap: 10px 0px;
+   }
+
+   .JD .info span
+   {
+       background-color: #FCD21C;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+       margin: 0 auto;
+   }
+
+.btn
+{
+    margin-top: 30px;
+}
+.btn a
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+@media only screen and (max-width:930px) {
+    .nav a:hover::after
+    {
+        all: unset;
+    }
+.toggle-btn
+{
+    display: block;
+}
+header
+{
+    position: relative;
+}
+
+.open header::after
+{
+    content: "";
+    position: absolute;
+    top:70px;
+    left:0;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    opacity: .5;
+}
+
+.nav
+{
+    position: absolute;
+    right: -100%;
+    top:70px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #FCD21C;
+    width: 90%;
+    border: 1px solid #fff;
+    height: 100vh;
+    transition: right .1s linear;
+    padding: 0px 20px;
+    z-index: 1000;
+}
+.nav a
+{
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.contact
+{
+    margin: 0 auto;
+}
+
+.open .nav
+{
+       right: 0%;
+
+}
+
+}
