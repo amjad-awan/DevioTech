@@ -421,6 +421,13 @@ max-width: 800px;
     color: #000;
     font-weight: bold;
     text-decoration: none;
+    transition: all .1s linear;
+}
+
+.btn a:hover{
+    background-color: #FCD21C;
+    border: 2px solid #FCD21C;
+    color: #fff;
 }
 @media only screen and (max-width:930px) {
     .nav a:hover::after
