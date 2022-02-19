@@ -373,6 +373,10 @@ max-width: 800px;
 {
     display: inline-block;
 }
+.JD .cards
+{
+      gap: 100px;
+}
 
 .JD .card
 {
@@ -380,6 +384,7 @@ max-width: 800px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 10px;
 }
 .JD .info
    {
