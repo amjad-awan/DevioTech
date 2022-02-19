@@ -15,6 +15,38 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+/*--------- ScrollReveal ------*/
+
+window.sr=ScrollReveal();
+sr.reveal('.animate-left', {
+    origin:'left',
+    duration:1000,
+    distance:'25rem',
+       reset: true,
+    delay:300
+});
+window.sr=ScrollReveal();
+sr.reveal('.animate-right', {
+    origin:'right',
+    duration:1000,
+    distance:'25rem',
+       reset: true,
+    delay:300
+});
+sr.reveal('.animate-bottom', {
+    origin:'bottom',
+    duration:1000,
+    distance:'25rem',
+       reset: true,
+    delay:300
+});
+sr.reveal('.animate-top', {
+    origin:'top',
+    duration:1000,
+    distance:'25rem',
+       reset: true,
+    delay:600
+});
 
 $(document).ready(function(){
     $(".toggle-btn").click(function(){
