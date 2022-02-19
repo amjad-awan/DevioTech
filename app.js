@@ -17,7 +17,8 @@ $('.owl-carousel').owlCarousel({
 
 /*--------- ScrollReveal ------*/
 
-window.sr=ScrollReveal();
+window.addEventListener("DOMContentLoaded",function(){
+    window.sr=ScrollReveal();
 sr.reveal('.animate-left', {
     origin:'left',
     duration:1000,
@@ -47,6 +48,9 @@ sr.reveal('.animate-top', {
        reset: true,
     delay:600
 });
+
+})
+
 
 $(document).ready(function(){
     $(".toggle-btn").click(function(){
