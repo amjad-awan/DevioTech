@@ -267,10 +267,15 @@ border-radius: 50%;
        justify-content: center;
        align-items: center;
        position: relative;
+       transition: all .3s linear;
    }
-    .our-tutor .card:hover, .our-tutor .card:hover .info i
-    {
+   .our-tutor .card:hover
+   {
        background-color: rgb(14, 13, 13);
+   }
+    .our-tutor .card:hover .info i
+    {
+
          color: #FCD21C;
     }
     .our-tutor .card:hover, .our-tutor .card:hover .info h3
