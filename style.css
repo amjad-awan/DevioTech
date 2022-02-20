@@ -467,13 +467,78 @@ max-width: 800px;
     font-weight: bold;
     text-decoration: none;
     transition: all .1s linear;
+    position: relative;
+    overflow: hidden;
 }
 
-.btn a:hover{
+.btn a::after
+{
+    position: absolute;
+    content: "";
+    left:0;
+    top: 0;
+    height: 100%;
+    background-color: #000;
+    width:0px;
+    transition: all .3s linear;
+    z-index: -1;
+
+}
+.btn a:hover
+{
+     animation: clr 1s;
+     z-index: 111;
+}
+
+@keyframes clr {
+
+    0%
+    {
+        color: #fff;
+
+    }
+    50%
+    {
+         color: #fff;
+    }
+     100%
+    {
+          color: #000;
+
+    }
+
+}
+.btn a:hover::after
+{
+     animation: hover-btn 1s ;
+
+}
+
+@keyframes hover-btn {
+
+    0%
+    {
+        left:0;
+
+    }
+    50%
+    {
+          width: 100%;
+          left:0;
+    }
+     100%
+    {
+        left:100%;
+
+    }
+
+}
+
+/*.btn a:hover{
     background-color: #FCD21C;
     border: 2px solid #FCD21C;
     color: #fff;
-}
+}*/
 @media only screen and (max-width:930px) {
     .nav a:hover::after
     {
