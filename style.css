@@ -85,6 +85,10 @@ height: 70px;
 {
     font-size: 20px;
 }
+.contact a
+{
+    color: #000;
+}
 .contact> div{
     display: flex;
     flex-direction: column;
