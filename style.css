@@ -350,6 +350,42 @@ border-radius: 50%;
   margin-top: 10px;
 
 }
+.Experience .img-wrapper
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.Experience .hover-info
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FCD21C;
+    opacity: .8;
+    transition: all .3s linear;
+    transform: scale(0);
+
+}
+.Experience .img-wrapper:hover .hover-info
+{
+    transform: scale(1);
+
+}
+.Experience .hover-info a
+{
+     color: #000;
+     font-weight: bold;
+}
 /*--------------------- teaching experience section ends  ---------------*/
 
 .study-image
